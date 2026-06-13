@@ -5,22 +5,76 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-  //return Row(
-    return Column(
-    //mainAxisAlignment: MainAxisAlignment.start,
-    //mainAxisAlignment: MainAxisAlignment.center,
-     //mainAxisAlignment: MainAxisAlignment.cmd,
-     // //mainAxisAlignment: MainAxisAlignment.spaceAround,
-    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-    crossAxisAlignment: CrossAxisAlignment.stretch,
-    children: [
-      Image.asset("assets/images/fow.png" , width: 200, height: 200,),
-      SizedBox(height: 20,),
-      Image.network("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg" ,
-      width: 200, height: 200,),
-    ],
-  );
-     
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          TextButton(
+            style : TextButton.styleFrom( 
+            backgroundColor: const Color.fromARGB(255, 102, 119, 134),
+            foregroundColor: Colors.white,
+            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+          ),
+          onPressed: () {
+            print("กดปุ่มแล้ว");
+          },
+          child: Text("กดฉันสิ", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+          ),
+          const SizedBox(height: 20),
+          FilledButton(
+            style : FilledButton.styleFrom(
+          
+            foregroundColor: Colors.white,
+            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+          ),
+
+          onPressed: () {
+
+            print("กดปุ่มแล้ว");
+
+          },
+
+
+          child: Text("กดฉันสิ", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+          ),
+           const SizedBox(height: 20),
+          OutlinedButton(
+            style : OutlinedButton.styleFrom(
+            
+            foregroundColor: Colors.white,
+            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+          ),
+          onPressed: () {
+
+            print("กดปุ่มแล้ว");
+
+          },
+
+
+          child: Text("กดฉันสิ", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+          ),
+          const SizedBox(height: 20),
+          ElevatedButton(
+            style : ElevatedButton.styleFrom(
+           
+            foregroundColor: const Color.fromARGB(255, 99, 4, 4),
+            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+          ),
+          onPressed: () {
+
+            print("กดปุ่มแล้ว");
+
+          },
+
+
+          child: Text("กดฉันสิ", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+          ),
+
+        ],
+
+
+      ),
+    );
 
   
   } 
