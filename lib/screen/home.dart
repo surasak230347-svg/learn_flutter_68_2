@@ -14,68 +14,15 @@ class Home extends StatelessWidget {
     mainAxisAlignment: MainAxisAlignment.spaceBetween,
     crossAxisAlignment: CrossAxisAlignment.stretch,
     children: [
-      Container(
-        color: const Color.fromARGB(255, 55, 45, 45),
-        padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-        child: Text(
-          "Hello, Flutter 5!",
-          style: TextStyle(
-            fontSize: 20,
-            color: Colors.white,
-            fontWeight: FontWeight.bold,
-            letterSpacing: 3,
-          ),
-
-        ),
-
-        ),
-      Container(
-        color: const Color.fromARGB(255, 55, 45, 45),
-        padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-        child: Text(
-          "Hello, Flutter 5!",
-          style: TextStyle(
-            fontSize: 20,
-            color: Colors.white,
-            fontWeight: FontWeight.bold,
-            letterSpacing: 3,
-          ),
-
-        ),
-
-        ),
-      Container(
-        color: const Color.fromARGB(255, 55, 45, 45),
-        padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-        child: Text(
-          "Hello, Flutter 5!",
-          style: TextStyle(
-            fontSize: 20,
-            color: Colors.white,
-            fontWeight: FontWeight.bold,
-            letterSpacing: 3,
-          ),
-
-        ),
-
-        ),
-        Container(
-        color: const Color.fromARGB(255, 55, 45, 45),
-        padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-        child: Text(
-          "Hello, Flutter 5!",
-          style: TextStyle(
-            fontSize: 20,
-            color: Colors.white,
-            fontWeight: FontWeight.bold,
-            letterSpacing: 3,
-          ),
-
-        ),
-
-        )  
+      Image.asset("assets/images/fow.png" , width: 200, height: 200,),
+      SizedBox(height: 20,),
+      Image.network("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg" ,
+      width: 200, height: 200,),
     ],
   );
+     
+
+  
   } 
 }
 
