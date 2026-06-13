@@ -5,14 +5,78 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-  return Center( child: Container(
-    color: Colors.purpleAccent,
-    margin : EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-    padding: EdgeInsets.all(50),
-    child: Text(
-    "Hello, World! 4",
-    )
-  ) 
-    );
-  }
+  //return Row(
+    return Column(
+    //mainAxisAlignment: MainAxisAlignment.start,
+    //mainAxisAlignment: MainAxisAlignment.center,
+     //mainAxisAlignment: MainAxisAlignment.cmd,
+     // //mainAxisAlignment: MainAxisAlignment.spaceAround,
+    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    crossAxisAlignment: CrossAxisAlignment.stretch,
+    children: [
+      Container(
+        color: const Color.fromARGB(255, 55, 45, 45),
+        padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+        child: Text(
+          "Hello, Flutter 5!",
+          style: TextStyle(
+            fontSize: 20,
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+            letterSpacing: 3,
+          ),
+
+        ),
+
+        ),
+      Container(
+        color: const Color.fromARGB(255, 55, 45, 45),
+        padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+        child: Text(
+          "Hello, Flutter 5!",
+          style: TextStyle(
+            fontSize: 20,
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+            letterSpacing: 3,
+          ),
+
+        ),
+
+        ),
+      Container(
+        color: const Color.fromARGB(255, 55, 45, 45),
+        padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+        child: Text(
+          "Hello, Flutter 5!",
+          style: TextStyle(
+            fontSize: 20,
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+            letterSpacing: 3,
+          ),
+
+        ),
+
+        ),
+        Container(
+        color: const Color.fromARGB(255, 55, 45, 45),
+        padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+        child: Text(
+          "Hello, Flutter 5!",
+          style: TextStyle(
+            fontSize: 20,
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+            letterSpacing: 3,
+          ),
+
+        ),
+
+        )  
+    ],
+  );
+  } 
 }
+
+   
