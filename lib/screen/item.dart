@@ -20,6 +20,7 @@
             decoration: BoxDecoration(
               border: Border.all(color: Colors.pink),
               borderRadius: BorderRadius.circular(10),
+              color: people[index].job.color.withOpacity(0.2),
             ),
             margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
             padding: EdgeInsets.all(40),
@@ -31,7 +32,7 @@
                   children: [
                     Text("ชื่อ: ${people[index].name}", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
                     Text("อายุ: ${people[index].age}", style: TextStyle(fontSize: 16)),
-                    Text("อาชีพ: ${people[index].job}", style: TextStyle(fontSize: 16)),
+                    Text("อาชีพ: ${people[index].job.title}", style: TextStyle(fontSize: 16)),
                   ],
                 ),
                 Icon(Icons.person, size: 50, color: Colors.pinkAccent),
