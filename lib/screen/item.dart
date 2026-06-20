@@ -1,5 +1,6 @@
   import 'package:flutter/material.dart';
   import 'package:learn_flutter_68_2/model/person.dart';
+  import 'package:google_fonts/google_fonts.dart';
 
   class Item extends StatefulWidget {
     const Item({super.key});
@@ -30,9 +31,9 @@
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("ชื่อ: ${people[index].name}", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
-                    Text("อายุ: ${people[index].age}", style: TextStyle(fontSize: 16)),
-                    Text("อาชีพ: ${people[index].job.title}", style: TextStyle(fontSize: 16)),
+                    Text("ชื่อ: ${people[index].name}", style: GoogleFonts.kanit(fontSize: 20, fontWeight: FontWeight.bold)),
+                    Text("อายุ: ${people[index].age}", style: GoogleFonts.kanit(fontSize: 16)),
+                    Text("อาชีพ: ${people[index].job.title}", style: GoogleFonts.kanit  (fontSize: 16)),
                   ],
                 ),
                 Icon(Icons.person, size: 50, color: Colors.pinkAccent),

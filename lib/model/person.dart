@@ -1,6 +1,5 @@
 
-import 'package:flutter/material.dart';
-
+  import 'package:flutter/material.dart';
 
 enum Job {
   developer(
@@ -32,6 +31,12 @@ enum Job {
     description: "ทำงานเกี่ยวกับการให้คำปรึกษาทางกฎหมายและการเป็นตัวแทนในศาล",
     image: "assets/imaeges/tung.jpg",
     color: Colors.orangeAccent,
+  ),
+  student(
+    title: "นักเรียน",
+    description: "ทำงานเกี่ยวกับการเรียนรู้และการศึกษา",
+    image: "assets/imaeges/tung.jpg",
+    color: Colors.yellowAccent, 
   );
 }
 
@@ -49,23 +54,22 @@ List<Person> people = [
   Person(name: "สมปอง", age: 30, job: Job.teacher),
   Person(name: "สมหมาย", age: 35, job: Job.doctor),
   Person(name: "สมจิตร", age: 40, job: Job.lawyer),
-];
-student(
-  title: "นักเรียน",
-  description: "ทำงานเกี่ยวกับการเรียนรู้และการศึกษา",
-  image: "assets/imaeges/tung.jpg",
-  color: Colors.yellowAccent,
-);
+  Person(name: "สมพร", age: 45, job: Job.student),
+  
+  ];      
 const Job ({
   required this.title,
   required this.description,
   required this.image,
   required this.color,
 }
+
 );
+
 final String title;
 final String description; 
 final String image;
 final Color color;
 }
+
 
