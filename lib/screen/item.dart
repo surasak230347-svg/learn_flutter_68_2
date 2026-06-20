@@ -1,6 +1,7 @@
   import 'package:flutter/material.dart';
   import 'package:learn_flutter_68_2/model/person.dart';
   import 'package:google_fonts/google_fonts.dart';
+  import 'package:learn_flutter_68_2/screen/addform.dart';
 
   class Item extends StatefulWidget {
     const Item({super.key});
@@ -14,27 +15,27 @@
 
     @override
     Widget build(BuildContext context) {
-      return ListView.builder(
-        itemCount: people.length,
-        itemBuilder: (content, index) {
-          return Container(
-            decoration: BoxDecoration(
-              border: Border.all(color: Colors.pink),
-              borderRadius: BorderRadius.circular(10),
-              color: people[index].job.color.withOpacity(0.2),
-            ),
-            margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-            padding: EdgeInsets.all(40),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text("ชื่อ: ${people[index].name}", style: GoogleFonts.kanit(fontSize: 20, fontWeight: FontWeight.bold)),
-                    Text("อายุ: ${people[index].age}", style: GoogleFonts.kanit(fontSize: 16)),
-                    Text("อาชีพ: ${people[index].job.title}", style: GoogleFonts.kanit  (fontSize: 16)),
-                  ],
+      // return ListView.builder(
+      //   itemCount: people.length,
+      //   itemBuilder: (content, index) {
+      //     return Container(
+      //       decoration: BoxDecoration(
+      //         border: Border.all(color: Colors.pink),
+      //         borderRadius: BorderRadius.circular(10),
+      //         color: people[index].job.color.withOpacity(0.2),
+      //       ),
+      //       margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+      //       padding: EdgeInsets.all(40),
+      //       child: Row(
+      //         mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      //         children: [
+      //           Column(
+      //             crossAxisAlignment: CrossAxisAlignment.start,
+      //             children: [
+      //               Text("ชื่อ: ${people[index].name}", style: GoogleFonts.kanit(fontSize: 20, fontWeight: FontWeight.bold)),
+      //               Text("อายุ: ${people[index].age}", style: GoogleFonts.kanit(fontSize: 16)),
+      //               Text("อาชีพ: ${people[index].job.title}", style: GoogleFonts.kanit  (fontSize: 16)),
+      //             ],
                 ),
                 Icon(Icons.person, size: 50, color: Colors.pinkAccent),
               ],

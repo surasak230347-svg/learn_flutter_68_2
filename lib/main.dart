@@ -21,7 +21,27 @@ import 'package:learn_flutter_68_2/screen/addform.dart';{
 // );
 // }
 
-runApp(AddForm());
+// runApp(AddForm());
+// }
+runApp(MyApp());
 }
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: "เพิ่มข้อมูล",
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("เพิ่มข้อมูล"),
+          backgroundColor: Colors.pinkAccent,
+          centerTitle: true,
+        ),
+        body: AddForm(),
+      ),
+    );
+  }
+}
+      
 

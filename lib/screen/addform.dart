@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_68_2/model/person.dart';
+import 'package:learn_flutter_68_2/main.dart';
 
 
 
@@ -130,14 +131,23 @@ class _AddFormState extends State<AddForm> {
               },
                    setState(() {
                      people.add(Person(name: _name, age: _age, job: _job)); 
-
-
-
                     }),
-                    
+      
+                    formKey.currentState.reset();
+                    Navigator.push(
+                      context,
+
+                    MateriaPageRoute(builder: (context) => MyApp()),
+                    );
+              child: Text("เพิ่มข้อมูล", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+            ),
+              
+
+                    )
+
 
             },
-            
+
           ),
         ]
 
